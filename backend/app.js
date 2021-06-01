@@ -226,3 +226,10 @@ function check() {
         intervalId = setInterval(gameTurn, 800 );
     }
 }
+
+function winGame() {
+    flashColor();
+    turnCounter.innerHTML = 'WIN!';
+    on = false;
+    win = true;
+}
