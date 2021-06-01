@@ -13,7 +13,7 @@ let win;
 const turnCounter = document.querySelector('#turn');
 const topLeft = document.querySelector('#topleft');
 const topRight = document.querySelector('#topright');
-const bottonLeft = document.querySelector('#bottomleft');
+const bottomLeft = document.querySelector('#bottomleft');
 const bottomRight = document.querySelector('#bottomright');
 const strictButton = document.querySelector('#strict');
 const onButton = document.querySelector('#on');
@@ -125,4 +125,11 @@ function four() {
     }
     noise = true;
     bottomRight.style.backgroundColor = "lightskyblue";
+}
+
+function clearColor() {
+    topLeft.style.backgroundColor = "darkgreen";
+    topRight.style.backgroundColor = "darkred";
+    bottomLeft.style.backgroundColor = "goldenrod";
+    bottomRight.style.backgroundColor = "darkblue";
 }
