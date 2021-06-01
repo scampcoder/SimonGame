@@ -33,5 +33,6 @@ onButton.addEventListener('click', (event) => {
         turnCounter.innerHTML = "-";
     } else {
         on = false;
+        turnCounter.innerHTML = "";
     }
 })
