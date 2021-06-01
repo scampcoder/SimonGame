@@ -19,3 +19,19 @@ const strict = document.querySelector('#strict');
 const onButton = document.querySelector('#on');
 const startButton = document.querySelector('#start');
 
+startButton.addEventListener('click', (event) => {
+    if (strictButton.checked == true){
+        strict =  true;
+    } else {
+        strict = false;
+    }
+})
+
+onButton.addEventListener('click', (event) => {
+    if (onButton.checked == true){
+        on = true;
+        turnCounter.innerHTML = "-";
+    } else {
+        on = false;
+    }
+})
